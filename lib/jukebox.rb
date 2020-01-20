@@ -40,16 +40,8 @@ def run(songs)
   # initialize command and do the first pass
   puts "Please enter a command:"
   command = gets.strip 
-  if command == "help"
-    help()
-  elsif command == "list"
-    list(songs)
-  elsif command == "play"
-    play(songs)
-  elsif command == "exit"
+  if command == "exit"
     exit_jukebox()
-  else
-    puts "Invalid command"
   end
   # now loop until user exits
   while !(command == "exit") do
